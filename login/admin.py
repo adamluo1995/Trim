@@ -12,15 +12,15 @@ class AccountAdmin(admin.ModelAdmin):
 
 
 class LogAdmin(admin.ModelAdmin):
-    list_display = ('content', 'pub_date')
+    list_display = ('content', 'pub_time', 'id')
 
 
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'pub_date')
+    list_display = ('title', 'pub_time', 'id')
 
 
 class GoalAdmin(admin.ModelAdmin):
-    list_display = ('content', 'pub_date')
+    list_display = ('title', 'pub_time', 'id')
 
 admin.site.register(Account, AccountAdmin)
 admin.site.register(Log, LogAdmin)
