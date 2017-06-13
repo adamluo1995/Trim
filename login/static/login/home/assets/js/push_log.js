@@ -13,5 +13,9 @@ $(document).ready(function(){
         $("#hid_form").submit();
     });
 
+    $(window).unload(function(){
+        $.get("/index/close/",{},function(ret,status){})
+    });
+
 
 });

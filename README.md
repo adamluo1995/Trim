@@ -15,6 +15,15 @@ Sorry, The English introduction still in develop:)
 
 ***
 ## Progress 进度
+### 2017/06/14
+#### Done 已完成
+* a little normalization 规范了一点
+* sign_out 登出
+
+#### Next 下一步
+* Account detail 账户细节
+* Social systems 社交系统
+
 ### 2017/05/31
 #### Done 已完成
 * signup and signin 注册和登录

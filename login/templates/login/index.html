@@ -36,7 +36,7 @@
 								<li><a href="#signup">注册</a></li>
 								<li><a href="#signin">登录</a></li>
 								<li><a href="https://github.com/adamluo1995/Trim">GitHub</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#elements">Elements</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -84,7 +84,7 @@
 						<!-- Signin -->
 							<article id="signin">
 								<h2 class="major">登录</h2>
-								<form method="post" action="{% url 'login:signin' %}">
+								<form method="post" action="{% url 'login:signin' %}" id="signin_form">
 									{% csrf_token %}
 									<div class="field first">
 										<label for="_email">邮箱</label>
@@ -99,8 +99,9 @@
 										<label for="remember">记住我</label>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="提交" class="special" /></li>
+										<li><input type="button" value="提交" class="special" id="signin_sub_btn"/></li>
 										<li><input type="reset" value="Reset" /></li>
+										<li><p id="signin_mes"></p></li>
 									</ul>
 								</form>
 							</article>
