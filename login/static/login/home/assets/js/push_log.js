@@ -17,5 +17,9 @@ $(document).ready(function(){
         $.get("/index/close/",{},function(ret,status){})
     });
 
+//    $("a[id^='btn_edit_goal_']").click(function(event){
+//        var goal_id = $(this).attr("id").substring(14)
+//
+//    })
 
 });

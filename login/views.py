@@ -88,11 +88,11 @@ def add_log(request):
 @csrf_exempt
 def goal_edit(request):
     account = models.Account.objects.get(pk=request.session['email'])
-    if request.POST['id'] == '0':
+    if request.POST['goal_id'] == '0':
         models.Goal.objects.create(account=account, title=request.POST['title'], content=request.POST['content'],
                                    is_active=True)
     else:
-        goal = models.Goal.objects.get(pk=request.POST['id'])
+        goal = models.Goal.objects.get(pk=request.POST['goal_id'])
         goal.content = request.POST['content']
         goal.title = request.POST['title']
         goal.save()
@@ -114,3 +114,11 @@ def signout(request):
     if request.session.get('email'):
         del request.session['email']
     return HttpResponseRedirect(reverse('login:index'))
+
+
+def delete_goal(request, goal_id):
+    goal = models.Goal.objects.get(pk=goal_id)
+    goal.delete()
+    # models.Goal.objects.delete(pk=goal_id)
+    return HttpResponseRedirect(reverse('login:home'))
+

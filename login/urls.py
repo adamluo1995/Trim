@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^check_signin/$', views.check_signin, name='check_signin'),
     url(r'^home/$', views.home, name='home'),
     url(r'^close/$', views.close, name='close'),
-    url(r'^signout/$', views.signout, name='signout')
+    url(r'^signout/$', views.signout, name='signout'),
+    url(r'^delete_goal/(?P<goal_id>\d+)/$', views.delete_goal, name='delete_goal'),
 
 ]
