@@ -39,5 +39,4 @@ Sorry, The English introduction still in develop:)
 ## Contact 联系方式
 If you want to join this project but don't know what to do, contact me.
 如果你想要加入项目又不知道怎么干，那就联系我吧
-* Email: 529895903@qq.com(prefer) or adamluo1995@gmail.com
-* QQ: 529895903
+* Email: adamluo1995@gmail.com
